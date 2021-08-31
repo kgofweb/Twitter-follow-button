@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1DA1F2;
+}
+
+.phone {
+  width: 400px;
+  height: 720px;
+  background-color: #ecf0f1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.header-banner {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+  background: url('./img/banner2.png') center center/cover;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-right,
+.btn-left,
+button {
+  cursor: pointer;
+}
+
+.btn-right,
+.btn-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  margin: 0 1rem;
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  color: #FFF;
+  background-color: #636e72;
+  z-index: 10;
+} 
+
+.header-banner::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 8rem;
+  background-color: #2d3436;
+  border-radius: inherit;
+  opacity: .3;
+}
+
+.header-profile {
+  position: absolute;
+  top: 16%;
+  margin-left: 2rem;
+  width: 80px;
+  height: 80px;
+  border: 6px solid #FFF;
+  border-radius: 50px;
+  background: url('./img/barceloneLogo.jfif') center center/cover;
+}
+
+.main {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.title {
+  margin-top: 3rem;
+}
+
+.title h2 {
+  font-size: 1.3rem;
+}
+
+.title p {
+  color: #b2bec3;
+}
+
+.title .description {
+  color: #2d3436;
+  font-size: 1.15rem;
+  margin-top: .5rem;
+}
+
+/* ======= Follow Box ======= */
+.follow-box {
+  position: absolute;
+  top: -18%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-btn,
+.follow-notification,
+.follow-message {
+  border: .1px solid #b2bec3;
+  margin-left: 10px;
+}
+
+.follow-btn {
+  padding: .5rem 1.5rem;
+  outline: none;
+  border: none;
+  color: #FFF;
+  background-color: black;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.abonnements {
+  color: black;
+  background: none;
+  border: .1px solid #b2bec3;
+}
+
+.follow-notification,
+.follow-message {
+  color: #636e72;
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  margin-left: 10px;
+  transition: .5s;
+  
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-notification {
+  display: none;
+}
+
+/* ====== Plus Infos ====== */
+.plus-info {
+  margin-top: 1rem;
+}
+
+.localisation,
+.date {
+  display: flex;
+  align-items: center;
+  padding: .2rem 0;
+  color: #636e72;
+}
+
+.localisation p,
+.date p {
+  margin-left: .5rem;
+}
+
+.followers-box {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.followers-box span {
+  color: #636e72;
+}
+
+.followers-box p:nth-child(2) {
+  margin-left: 1rem;
+}
